@@ -1,0 +1,51 @@
+#hamnav {
+	width: 100%;
+	background: #000;
+}
+
+#hamnav label, #hamburger {
+	display: none; 
+}
+
+#hamitems {
+	display: flex;
+}
+
+#hamitems a {
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+#hamitems a:hover {
+	background: #8a0000;
+}
+
+@media screen and (max-width: 768px) {
+	#hamitems a{
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		border-top: 1px solid #333;
+	}
+}
+
+#hamnav label {
+	display: inline-block;
+	color: #fff;
+	background: #8a0000;
+	font-size: 1.2em;
+	font-style: normal;
+	padding: 10px;
+}
+
+#hamitems {
+	display: none;
+}
+
+#hamnav input:checked ~ #hamitems {
+	display: block;
+}

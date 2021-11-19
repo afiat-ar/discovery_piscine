@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			body {
+				color: white;
+			}
+
+			#btn {
+				border-radius: 5px 5px 5px 5px;
+				margin-left: 12px;
+				margin-bottom: 12px;
+				width: 80px;
+				height: 24px;
+			}
+
+			#btn:hover {
+				background-color:wheat;
+			}
+			
+			h3 {
+				color: white;
+				padding-left: 12px;
+				padding-top:  12px;
+			}
+
+			.container {
+				margin: 100px auto;
+				background-color: rgb(62, 72, 73);
+				box-shadow: 0 10px 20px -10px rgba(0,0,0,0.75);
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body onload="checkCookie()">
+		<script src="todo.js"></script>
+		<div class="container">
+			<h3>TODO</h3>
+			<hr/>
+			<button id="btn" type="button" onclick="new_todo();">New</button>
+			<div id="ft_list">
+				<ul id="TODO"></ul>
+			</div>
+		</div>
+	</body>
+</html>
